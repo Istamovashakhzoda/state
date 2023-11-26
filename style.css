@@ -1,0 +1,26 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #999;
+}
+
+button {
+  padding: 1rem 4rem;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  font: 600 20px/1 system-ui, sans-serif;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  --glarePosition: 15%;
+  background: linear-gradient(to bottom, #444, #444 calc(var(--glarePosition) - 10%), #999 var(--glarePosition), #444 calc(var(--glarePosition) + 10%), #444);
+}
+button:hover {
+  --glarePosition: 20%;
+}
+button:active {
+  --glarePosition: 40%;
+}
+
+/*# sourceMappingURL=style.css.map */
